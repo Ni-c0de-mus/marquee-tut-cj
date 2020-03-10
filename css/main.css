@@ -1,0 +1,274 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Arima+Madurai|Audiowide|Baloo+Bhaina|Bebas+Neue|Cabin+Sketch|Cinzel+Decorative|Gruppo|Nixie+One|Overlock|Righteous|Share|Squada+One|Unica+One&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Fonts */
+/* Coolors */
+/* Fonts */
+/* Marquee */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/* Universal Styles */
+html {
+  font-size: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Nixie One", cursive;
+  background-color: #508AA8;
+  color: #F6F8FF;
+  height: 100vh;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body li {
+  font-size: 8rem;
+  font-weight: bold;
+}
+
+.marquee {
+  height: 20vh;
+  width: 80vw;
+  position: relative;
+  background-color: #110B11;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.marquee::before,
+.marquee::after {
+  content: "";
+  top: 0;
+  position: absolute;
+  width: 10rem;
+  height: 100%;
+  z-index: 1;
+}
+
+.marquee::before {
+  left: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#110B11), to(transparent));
+  background: linear-gradient(to right, #110B11 0%, transparent 100%);
+}
+
+.marquee::after {
+  right: 0;
+  background: -webkit-gradient(linear, right top, left top, from(#110B11), to(transparent));
+  background: linear-gradient(to left, #110B11 0%, transparent 100%);
+}
+
+.marquee__content {
+  height: 100%;
+  max-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Animation */
+  -webkit-animation: scrolling 10s linear infinite;
+          animation: scrolling 10s linear infinite;
+}
+
+@-webkit-keyframes scrolling {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-180vw);
+            transform: translateX(-180vw);
+  }
+}
+
+@keyframes scrolling {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-180vw);
+            transform: translateX(-180vw);
+  }
+}
+
+.marquee__content li {
+  border: 2px solid #A23B72;
+  width: 20vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.marquee__content:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.duplicate {
+  background-color: #A491D3;
+}
+
+/* Main */
+/*# sourceMappingURL=main.css.map */

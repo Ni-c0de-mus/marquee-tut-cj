@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Arima+Madurai|Audiowide|Baloo+Bhaina|Bebas+Neue|Cabin+Sketch|Cinzel+Decorative|Gruppo|Nixie+One|Overlock|Righteous|Share|Squada+One|Unica+One&display=swap');
+
+/* Fonts */
+
+$righteous: 'Righteous',
+cursive;
+$squada-one: 'Squada One',
+cursive;
+$unica-one: 'Unica One',
+cursive;
+$audiowide: 'Audiowide',
+cursive;
+$bebas-neue: 'Bebas Neue',
+cursive;
+$baloo-bhaina: 'Baloo Bhaina',
+cursive;
+$overclock: 'Overlock',
+cursive;
+$madurai: 'Arima Madurai',
+cursive;
+$cinzel: 'Cinzel Decorative',
+cursive;
+$cabin: 'Cabin Sketch',
+cursive;
+$share: 'Share',
+cursive;
+$gruppo: 'Gruppo',
+cursive;
+$nixie-one: 'Nixie One',
+cursive;
+
+/* Coolors */
+
+$smokie-black: #110B11;
+$pastel-red: #C73E1D;
+$tangerine: #F18F01;
+$red-purple: #A23B72;
+$steel-blue: #2E86AB;
+$rackley: #508AA8;
+$int-orange:#BA1200;
+$azurish: #C8E0F4;
+$baby-blue: #9DD1F1;
+$ghost-white: #F6F8FF;
+$purpurous: #A846A0;
+$dark-liver: #50514F;
+$shadow-blue: #778DA9;
+$gainsboro: #E0E1DD;
+$space-sparkle: #415A77;
+$med-gray: #A2ABAB;
+$slate-gray: #7D869C;
+$ash-grey: #B4C4AE;
+$soap: #CCC9E7;
+$isabelline: #EBEBEB;
+$pastel-gray: #CAD2C5;
+$black-shadows: #BBACC1;
+$pale-pink: #F1DEDE;
+$mindaro: #D8F793;
+$eton-blue: #A0CA92;
+$azurish-white: #D8DDEF;
+$cadet-grey: #A0A4B8;
+$artichoke: #8DAB7F;
+$kombu-green: #394032;
+$peach: #F7C59F;
+$rhythm: #767B91;
+$liquid-lav: #C7CCDB;
+$blue-bell: #A491D3;
+$spring-bud: #C5DCA0;
+$champagne: #F9DAD0;
+
+/* Fonts */
+
+$font-weights: ("regular": 400,
+  "medium": 500,
+  "bold": 900);
+
+/* Marquee */
+
+$marquee-width: 80vw;
+$marquee-height: 20vh;
+$marquee-elements: 9;
+$marquee-elements-displayed: 4;
+$marquee-element-width: calc(var($marquee-width)/var($marquee-elements-displayed));
+$marquee-animation-duration: calc(var($marquee-elements)*2s);
